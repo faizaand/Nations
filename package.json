@@ -7,8 +7,11 @@
     "pixi.js": "4.8.2",
     "react": "16.4.2",
     "react-dom": "16.4.2",
+    "react-flexbox-grid": "^2.1.2",
     "react-pixi-fiber": "0.4.9",
-    "react-scripts": "2.0.4"
+    "react-scripts": "2.0.4",
+    "react-sizeme": "^2.5.2",
+    "reactstrap": "^6.5.0"
   },
   "scripts": {
     "start": "react-scripts start",

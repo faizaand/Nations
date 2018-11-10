@@ -5,9 +5,9 @@ import RotatingBunny from './RotatingBunny';
 class Game extends Component {
     
     render() {
-        return (    
+        return (
             <Stage {...this.props}>
-                <RotatingBunny x={this.props.width / 2} y={this.props.height / 2}/>
+                <RotatingBunny x={this.props.width / 2} y={this.props.height / 2} width={this.props.width} height={this.props.height}/>
             </Stage>
         );
     }

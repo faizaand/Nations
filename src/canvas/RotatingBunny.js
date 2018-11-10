@@ -23,15 +23,17 @@ class RotatingBunny extends Component {
         var xDir = this.state.xDir;
         var yDir = this.state.yDir;
 
-        if(this.state.x >= 512) xDir = -1 - Math.random();
-        if(this.state.x <= 0) xDir = 1 + Math.random();
-        if(this.state.y >= 512) yDir = -1;
+        console.log(this.props.width, this.props.height);
+
+        if(this.state.x >= this.props.width) xDir = -1 - (Math.random());
+        if(this.state.x <= 0) xDir = 1 + (Math.random());
+        if(this.state.y >= this.props.height) yDir = -1;
         if(this.state.y <= 0) yDir = 1;
 
         let x = this.state.x + xDir;
         let y = this.state.y + yDir;
 
-        console.log(x);
+        // console.log(x);
 
         this.setState(state => ({
             ...state,
@@ -44,7 +46,7 @@ class RotatingBunny extends Component {
     };
 
     render() {
-        return <Bunny {...this.props} x={this.state.x} y={this.state.y} rotation={this.state.rotation}/>
+        return <Bunny x={this.state.x} y={this.state.y} rotation={this.state.rotation}/>
     }
 
 }
